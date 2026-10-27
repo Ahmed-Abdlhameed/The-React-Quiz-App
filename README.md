@@ -4,18 +4,17 @@ An interactive quiz app that tests your React knowledge. Answer 15 questions aga
 
 **[Live demo](https://the-react-quiz-app-blush.vercel.app/)**
 
-<!-- Add a screenshot: save it as screenshot.png in the repo root, then uncomment the next line. -->
 <!-- ![The React Quiz screenshot](screenshot.png) -->
 
 ## Features
 
-- 15 multiple-choice questions on React fundamentals (components, props, state, effects, hooks)
-- Each question is worth 10, 20, or 30 points depending on difficulty
-- Countdown timer (20 seconds per question); the quiz ends automatically when time runs out
-- Instant feedback: the correct answer turns green and wrong answers are marked after you pick
-- Progress bar with current question, question points, and running total
-- Final score with percentage, plus a high score that carries over between restarts in the same session
-- Loading and error states while the questions are fetched
+- 15 multiple-choice questions on React fundamentals (components, props, state, effects, hooks).
+- Each question is worth 10, 20, or 30 points depending on difficulty.
+- Countdown timer (20 seconds per question); the quiz ends automatically when time runs out.
+- Instant feedback: the correct answer turns green and wrong answers are marked after you pick.
+- Progress bar with current question, question points, and running total.
+- Final score with percentage, plus a high score that carries over between restarts in the same session.
+- Loading and error states while the questions are fetched.
 
 ## Tech stack
 
@@ -55,8 +54,8 @@ src/
 ## Getting started
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
-cd YOUR-REPO
+git clone https://github.com/Ahmed-Abdlhameed/The-React-Quiz-App.git
+cd The-React-Quiz-App
 npm install
 npm start
 ```
@@ -86,4 +85,4 @@ Edit `public/questions.json`. Each question follows this shape:
 
 ## Author
 
-Built by **Ahmed**. Find me on [GitHub](https://github.com/YOUR-USERNAME).
+Built by **Ahmed**. Find me on [GitHub](https://github.com/Ahmed-Abdlhameed).
