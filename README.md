@@ -85,4 +85,4 @@ Edit `public/questions.json`. Each question follows this shape:
 
 ## Author
 
-Built by **Ahmed**. Find me on [GitHub](https://github.com/Ahmed-Abdlhameed).
+Built by **Ahmed Abdelhameed**. Find me on [GitHub](https://github.com/Ahmed-Abdlhameed).
