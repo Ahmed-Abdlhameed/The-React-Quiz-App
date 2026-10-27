@@ -4,7 +4,7 @@ An interactive quiz app that tests your React knowledge. Answer 15 questions aga
 
 **[Live demo](https://the-react-quiz-app-blush.vercel.app/)**
 
-<!-- ![The React Quiz screenshot](screenshot.png) -->
+![The React Quiz screenshot](screenshot.png)
 
 ## Features
 
