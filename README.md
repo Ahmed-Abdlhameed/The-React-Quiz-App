@@ -2,9 +2,9 @@
 
 An interactive quiz app that tests your React knowledge. Answer 15 questions against a countdown timer, collect points, and try to beat your high score.
 
-**[Live demo](https://the-react-quiz-app-blush.vercel.app/)**
+**[Live Demo](https://the-react-quiz-app-blush.vercel.app/)**
 
-![The React Quiz screenshot](screenshot.png)
+![The React Quiz Screenshot](screenshot.png)
 
 ## Table of Contents
 
