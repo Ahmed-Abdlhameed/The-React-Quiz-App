@@ -14,7 +14,7 @@ An interactive quiz app that tests your React knowledge. Answer 15 questions aga
 4. [Project Structure](#project-structure)
 5. [Getting Started (How to Use)](#getting-started-how-to-use)
 6. [Build](#build)
-7. [Contributions (Adding Your Own Questions)](#how-to-use-adding-your-own-questions)
+7. [Contributions (Adding Your Own Questions)](#contributions-adding-your-own-questions)
 8. [License & Author](#license--author)
 
 ## Features
