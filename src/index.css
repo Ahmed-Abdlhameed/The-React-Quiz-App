@@ -24,24 +24,30 @@ html {
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   color: var(--color-light);
   background-color: var(--color-darkest);
   padding: 3.2rem;
 }
 
 .app {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.main {
-  width: 50rem;
+.main,
+main {
+  width: 100%;
+  max-width: 50rem;
 }
 
 .app-header {
-  width: 66rem;
+  width: 100%;
+  max-width: 66rem;
+  gap: 1.6rem;
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
@@ -59,6 +65,8 @@ body {
 
 img {
   width: 14rem;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -104,7 +112,8 @@ progress {
 
 .progress-info {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.5rem;
 }
 
 progress {
@@ -162,6 +171,7 @@ progress {
 .btn-option {
   width: 100%;
   text-align: left;
+  overflow-wrap: anywhere;
 }
 
 .btn-option.correct {
@@ -264,4 +274,160 @@ progress {
 .counter * {
   font-size: inherit;
   padding: 0.8rem;
+}
+
+/* ********** */
+/* Responsive */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  body {
+    padding: 2.4rem;
+  }
+
+  .app-header {
+    margin-bottom: 3.2rem;
+  }
+
+  img {
+    width: 11rem;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/* Large phones */
+@media (max-width: 600px) {
+  body {
+    padding: 1.6rem;
+  }
+
+  .app-header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  img {
+    width: 9rem;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .progress {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 1.1rem 2rem;
+  }
+
+  .btn-option:not([disabled]):hover {
+    transform: translateX(0.6rem);
+  }
+
+  .answer {
+    transform: translateX(1rem);
+  }
+
+  .options {
+    margin-bottom: 2.4rem;
+  }
+
+  .timer {
+    font-size: 1.6rem;
+    padding: 1.15rem 2rem;
+  }
+
+  .result {
+    font-size: 1.8rem;
+    padding: 1.6rem 2rem;
+    border-radius: 3rem;
+  }
+
+  .result span {
+    font-size: 2rem;
+  }
+
+  .highscore {
+    margin-bottom: 3.2rem;
+  }
+
+  .error {
+    border-radius: 3rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  body {
+    padding: 1.2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  .progress {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 1rem 1.6rem;
+  }
+
+  .timer {
+    font-size: 1.4rem;
+    padding: 1rem 1.6rem;
+  }
+
+  .result {
+    font-size: 1.6rem;
+  }
 }
