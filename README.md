@@ -6,6 +6,17 @@ An interactive quiz app that tests your React knowledge. Answer 15 questions aga
 
 ![The React Quiz screenshot](screenshot.png)
 
+## Table of Contents
+
+1. [Features](#features)
+2. [Tech Stack](#tech-stack)
+3. [How It Works](#how-it-works)
+4. [Project Structure](#project-structure)
+5. [Getting Started (How to Use)](#getting-started-how-to-use)
+6. [Build](#build)
+7. [Contributions (Adding Your Own Questions)](#how-to-use-adding-your-own-questions)
+8. [License & Author](#license--author)
+
 ## Features
 
 - 15 multiple-choice questions on React fundamentals (components, props, state, effects, hooks).
@@ -16,14 +27,14 @@ An interactive quiz app that tests your React knowledge. Answer 15 questions aga
 - Final score with percentage, plus a high score that carries over between restarts in the same session.
 - Loading and error states while the questions are fetched.
 
-## Tech stack
+## Tech Stack
 
 - React 18 (Create React App)
 - `useReducer` for all quiz state, `useEffect` for data fetching and the timer
 - Plain CSS
 - Deployed on Vercel
 
-## How it works
+## How It Works
 
 The whole app is driven by one reducer in `App.js` with five statuses: `loading`, `error`, `ready`, `active`, and `finish`. Each status renders a different part of the UI.
 
@@ -32,7 +43,7 @@ The whole app is driven by one reducer in `App.js` with five statuses: `loading`
 - The `Timer` component dispatches a `ticking` action every second and cleans up its interval on every re-render.
 - Restarting resets the quiz but keeps the questions and the high score.
 
-## Project structure
+## Project Structure
 
 ```
 public/
@@ -51,7 +62,7 @@ src/
     Finish.js
 ```
 
-## Getting started
+## Getting Started (How to Use)
 
 ```bash
 git clone https://github.com/Ahmed-Abdlhameed/The-React-Quiz-App.git
@@ -68,7 +79,9 @@ The app runs at [http://localhost:3000](http://localhost:3000).
 npm run build
 ```
 
-## Adding your own questions
+## Contributions (Adding Your Own Questions)
+
+Feel free to fork the repository and contribute by adding more questions or features. Pull requests are welcomed!
 
 Edit `public/questions.json`. Each question follows this shape:
 
@@ -83,6 +96,6 @@ Edit `public/questions.json`. Each question follows this shape:
 
 `correctOption` is the zero-based index of the right answer in `options`.
 
-## Author
+## License & Author
 
-Built by **Ahmed Abdelhameed**. Find me on [GitHub](https://github.com/Ahmed-Abdlhameed).
+This repository is for personal documentation purposes. Feel free to use or distribute its content as you wish. Built by **Ahmed Abdelhameed**. Find me on [GitHub](https://github.com/Ahmed-Abdlhameed).
